@@ -127,7 +127,7 @@ export async function runCommitLikeCommand(repository: MagitRepository, args: st
     // `--reuse-window` forces VSCode to open COMMIT_EDITMSG in the current
     // workspace even if the file is more closely related to a different
     // window/workspace.
-    // 
+    //
     // https://github.com/kahole/edamagit/issues/301
     let currentInstancePath = '';
     if (vscode.workspace.workspaceFolders?.at(0)) {
@@ -209,7 +209,7 @@ function findCodePath(): string {
   if (isCodium && !isDarwin) {
     codePath = 'codium';
   }
-  
+
   if (isInsiders && !isDarwin) {
     // On Mac the binary for the Insiders build is still called `code`
     codePath += '-insiders';
@@ -217,7 +217,7 @@ function findCodePath(): string {
 
   if (isCursor && isRemote) {
     // Cursor remote-server does not symlink to code but to cursor.
-    codePath = 'cursor'; 
+    codePath = 'cursor';
   }
 
   if (isWindows && isRemote) {
